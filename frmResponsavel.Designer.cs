@@ -43,6 +43,10 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +78,7 @@
             this.telefoneResponsavel.AutoSize = true;
             this.telefoneResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefoneResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.telefoneResponsavel.Location = new System.Drawing.Point(-3, 251);
+            this.telefoneResponsavel.Location = new System.Drawing.Point(12, 255);
             this.telefoneResponsavel.Name = "telefoneResponsavel";
             this.telefoneResponsavel.Size = new System.Drawing.Size(85, 24);
             this.telefoneResponsavel.TabIndex = 2;
@@ -85,7 +89,7 @@
             this.emailResponsavel.AutoSize = true;
             this.emailResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.emailResponsavel.Location = new System.Drawing.Point(25, 306);
+            this.emailResponsavel.Location = new System.Drawing.Point(425, 255);
             this.emailResponsavel.Name = "emailResponsavel";
             this.emailResponsavel.Size = new System.Drawing.Size(57, 24);
             this.emailResponsavel.TabIndex = 3;
@@ -96,7 +100,7 @@
             this.enderecoResponsavel.AutoSize = true;
             this.enderecoResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enderecoResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.enderecoResponsavel.Location = new System.Drawing.Point(267, 156);
+            this.enderecoResponsavel.Location = new System.Drawing.Point(417, 156);
             this.enderecoResponsavel.Name = "enderecoResponsavel";
             this.enderecoResponsavel.Size = new System.Drawing.Size(94, 24);
             this.enderecoResponsavel.TabIndex = 4;
@@ -107,7 +111,7 @@
             this.profissaoResponsavel.AutoSize = true;
             this.profissaoResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.profissaoResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.profissaoResponsavel.Location = new System.Drawing.Point(341, 212);
+            this.profissaoResponsavel.Location = new System.Drawing.Point(417, 207);
             this.profissaoResponsavel.Name = "profissaoResponsavel";
             this.profissaoResponsavel.Size = new System.Drawing.Size(86, 24);
             this.profissaoResponsavel.TabIndex = 5;
@@ -118,7 +122,7 @@
             this.observacaoResponsavel.AutoSize = true;
             this.observacaoResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.observacaoResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.observacaoResponsavel.Location = new System.Drawing.Point(253, 292);
+            this.observacaoResponsavel.Location = new System.Drawing.Point(183, 326);
             this.observacaoResponsavel.Name = "observacaoResponsavel";
             this.observacaoResponsavel.Size = new System.Drawing.Size(112, 24);
             this.observacaoResponsavel.TabIndex = 6;
@@ -128,7 +132,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(88, 161);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 20);
+            this.textBox1.Size = new System.Drawing.Size(199, 20);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
@@ -140,48 +144,89 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(88, 255);
+            this.textBox3.Location = new System.Drawing.Point(103, 259);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(184, 20);
             this.textBox3.TabIndex = 9;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(88, 306);
+            this.textBox4.Location = new System.Drawing.Point(488, 255);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(222, 20);
             this.textBox4.TabIndex = 10;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(365, 157);
+            this.textBox5.Location = new System.Drawing.Point(517, 157);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(193, 20);
             this.textBox5.TabIndex = 11;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(432, 212);
+            this.textBox6.Location = new System.Drawing.Point(517, 211);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.Size = new System.Drawing.Size(193, 20);
             this.textBox6.TabIndex = 12;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(371, 296);
+            this.textBox7.Location = new System.Drawing.Point(305, 330);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(193, 20);
+            this.textBox7.Size = new System.Drawing.Size(253, 20);
             this.textBox7.TabIndex = 13;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::sistemaVoluntariado.Properties.Resources.responsavel;
-            this.pictureBox1.Location = new System.Drawing.Point(116, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(138, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 24);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Responsável";
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnEditar.Location = new System.Drawing.Point(478, 400);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 23;
+            this.btnEditar.Text = "Excluir";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnAtualizar.Location = new System.Drawing.Point(379, 400);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnAtualizar.TabIndex = 22;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnSalvar.Location = new System.Drawing.Point(274, 400);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.TabIndex = 21;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
             // 
             // frmResponsavel
             // 
@@ -189,6 +234,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnAtualizar);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -229,5 +278,9 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }

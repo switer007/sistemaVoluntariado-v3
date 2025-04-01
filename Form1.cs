@@ -34,8 +34,31 @@ namespace sistemaVoluntariado
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            frmPrincipal frm = new frmPrincipal();
-            frm.ShowDialog();
+           try
+            {
+                //validação dos campos
+                if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtSenha))
+                {
+                    MessageBox.Show("Por favor, preencha ambos os campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtUsuario.Focus();
+                    return;
+                }
+
+                //Autenticação
+                if (AutenticarUsuario(txtUsuarioUsuario.Text, txtSenha.Text))
+                {
+                    //login bem-sucedido
+                    this.Hide();
+                    var formPrincipal = new MenuPrincipal();
+                    formPrincipal.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha incorretos.", "Falha no login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtSenha.Clear();
+                    txtUsuario.Focus();
+                }
+            }
         }
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
