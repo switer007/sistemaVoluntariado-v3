@@ -71,6 +71,7 @@
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -464,12 +465,23 @@
             this.textBox13.Size = new System.Drawing.Size(295, 20);
             this.textBox13.TabIndex = 45;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnBuscar.Location = new System.Drawing.Point(775, 619);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 46;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // frmAções
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(1289, 644);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAtualizar);
@@ -568,5 +580,6 @@
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
