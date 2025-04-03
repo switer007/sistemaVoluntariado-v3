@@ -33,11 +33,14 @@
             this.btnInstituicao = new System.Windows.Forms.Button();
             this.btnAcoes = new System.Windows.Forms.Button();
             this.btnResponsavel = new System.Windows.Forms.Button();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -116,6 +119,29 @@
             this.btnResponsavel.UseVisualStyleBackColor = true;
             this.btnResponsavel.Click += new System.EventHandler(this.btnResponsavel_Click);
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.FlatAppearance.BorderSize = 0;
+            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRelatorio.Location = new System.Drawing.Point(309, 409);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(157, 35);
+            this.btnRelatorio.TabIndex = 16;
+            this.btnRelatorio.Text = "Relatório";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::sistemaVoluntariado.Properties.Resources.Captura_de_tela_2025_04_02_112843;
+            this.pictureBox6.Location = new System.Drawing.Point(343, 327);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(85, 76);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 17;
+            this.pictureBox6.TabStop = false;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -178,6 +204,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(800, 467);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.btnResponsavel);
             this.Controls.Add(this.btnAcoes);
             this.Controls.Add(this.btnInstituicao);
@@ -191,6 +219,7 @@
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -212,5 +241,7 @@
         private System.Windows.Forms.Button btnInstituicao;
         private System.Windows.Forms.Button btnAcoes;
         private System.Windows.Forms.Button btnResponsavel;
+        private System.Windows.Forms.Button btnRelatorio;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }

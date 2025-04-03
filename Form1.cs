@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,10 +35,10 @@ namespace sistemaVoluntariado
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           try
+            try
             {
                 //validação dos campos
-                if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtSenha))
+                if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtSenha.Text))
                 {
                     MessageBox.Show("Por favor, preencha ambos os campos.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtUsuario.Focus();
@@ -45,11 +46,11 @@ namespace sistemaVoluntariado
                 }
 
                 //Autenticação
-                if (AutenticarUsuario(txtUsuarioUsuario.Text, txtSenha.Text))
+                if (AutenticarUsuario(txtUsuario.Text, txtSenha.Text))
                 {
                     //login bem-sucedido
                     this.Hide();
-                    var formPrincipal = new MenuPrincipal();
+                    var formPrincipal = new frmPrincipal();
                     formPrincipal.Show();
                 }
                 else
@@ -59,7 +60,34 @@ namespace sistemaVoluntariado
                     txtUsuario.Focus();
                 }
             }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"Erro ao acessar o banco de dados:\n {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro inesperado:\n {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+     private bool AutenticarUsuario(string usuario, string senha)
+        {
+            using (SqlConnection conn = new SqlConnection(conexao.IniciarCon))
+            {
+                string query = "Select idusuario FROM usuario WHERE usuario = @Usuario AND senhaUsuario = @Senha";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Usuario", usuario);
+                    cmd.Parameters.AddWithValue("@Senha", senha);
+
+                    conn.Open();
+                    var result = cmd.ExecuteScalar();
+
+                    //Se retornar um ID, o usuário existe e as credenciais estão corretas
+                    return result != null && result != DBNull.Value;
+                }
+            }
+     }
+
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
