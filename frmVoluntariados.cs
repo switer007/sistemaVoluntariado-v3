@@ -61,5 +61,11 @@ namespace sistemaVoluntariado
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            frmBuscaVoluntarios frm = new frmBuscaVoluntarios();
+            frm.ShowDialog();
+        }
     }
 }

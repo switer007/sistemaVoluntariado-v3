@@ -77,6 +77,36 @@
     <Compile Include="frmAções.Designer.cs">
       <DependentUpon>frmAções.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBuscaAcoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaAcoes.Designer.cs">
+      <DependentUpon>frmBuscaAcoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaInstituicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaInstituicao.Designer.cs">
+      <DependentUpon>frmBuscaInstituicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaResponsavel.Designer.cs">
+      <DependentUpon>frmBuscaResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaUsuario.Designer.cs">
+      <DependentUpon>frmBuscaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaVoluntarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaVoluntarios.Designer.cs">
+      <DependentUpon>frmBuscaVoluntarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastroUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +124,12 @@
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorio.Designer.cs">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
     </Compile>
     <Compile Include="frmResponsavel.cs">
       <SubType>Form</SubType>
@@ -122,6 +158,21 @@
     <EmbeddedResource Include="frmAções.resx">
       <DependentUpon>frmAções.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaAcoes.resx">
+      <DependentUpon>frmBuscaAcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaInstituicao.resx">
+      <DependentUpon>frmBuscaInstituicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaResponsavel.resx">
+      <DependentUpon>frmBuscaResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaUsuario.resx">
+      <DependentUpon>frmBuscaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaVoluntarios.resx">
+      <DependentUpon>frmBuscaVoluntarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastroUsuario.resx">
       <DependentUpon>frmCadastroUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorio.resx">
+      <DependentUpon>frmRelatorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmResponsavel.resx">
       <DependentUpon>frmResponsavel.cs</DependentUpon>

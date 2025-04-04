@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace sistemaVoluntariado
 {
-    public partial class frmInstituiçãovoluntariados: Form
+    public partial class frmBuscaInstituicao : Form
     {
-        public frmInstituiçãovoluntariados()
+        public frmBuscaInstituicao()
         {
             InitializeComponent();
-        }
-
-        private void btnBuscar_Click(object sender, EventArgs e)
-        {
-            frmBuscaInstituicao frm = new frmBuscaInstituicao();
-            frm.ShowDialog();
         }
     }
 }

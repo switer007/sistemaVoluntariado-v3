@@ -61,5 +61,11 @@ namespace sistemaVoluntariado
             frmResponsavel frm = new frmResponsavel();
             frm.ShowDialog();
         }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            frmRelatorio frm = new frmRelatorio();
+            frm.ShowDialog();
+        }
     }
 }
