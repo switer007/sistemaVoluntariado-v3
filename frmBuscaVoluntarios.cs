@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,32 @@ namespace sistemaVoluntariado
         {
             InitializeComponent();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            
+                try
+                {
+
+                    using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                    {
+                        cn.Open();
+                        
+                        var SqlQuery = "select * from voluntario where nomeVoluntario like '%" + txtBuscaVoluntario.Text + "%'";
+                        using (SqlDataAdapter da = new SqlDataAdapter(SqlQuery, cn))
+                        {
+                            using (DataTable dt = new DataTable())
+                            {
+                                da.Fill(dt);
+                                dataGridView1.DataSource = dt;
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Falha ao tentar conectar\n\n" + ex.Message);
+                }
+            }
+        }
     }
-}
