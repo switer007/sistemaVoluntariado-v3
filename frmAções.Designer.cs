@@ -47,31 +47,30 @@
             this.impactoSocialgerado = new System.Windows.Forms.Label();
             this.depoimentoDeParticipantes = new System.Windows.Forms.Label();
             this.Observaçoes = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtidacoes = new System.Windows.Forms.TextBox();
+            this.txtnomeAcao = new System.Windows.Forms.TextBox();
+            this.txtinstituicaoBeneficiada = new System.Windows.Forms.TextBox();
+            this.txtfuncionarioResponsavel = new System.Windows.Forms.TextBox();
+            this.txtqtdDepessoasimpactadas = new System.Windows.Forms.TextBox();
+            this.txtdescricaoDaacoes = new System.Windows.Forms.TextBox();
+            this.txtqtdAlunosenvolvidos = new System.Windows.Forms.TextBox();
+            this.txtverbaDosenac = new System.Windows.Forms.TextBox();
+            this.txtvalorDedoacao = new System.Windows.Forms.TextBox();
+            this.txtitensParaacao = new System.Windows.Forms.TextBox();
+            this.txtcolaboradosQueparticiparam = new System.Windows.Forms.TextBox();
+            this.txtimpactoSocialGerado = new System.Windows.Forms.TextBox();
+            this.txtQuantidadeDeItensArrecadados = new System.Windows.Forms.TextBox();
+            this.txtcursosParticipantes = new System.Windows.Forms.TextBox();
+            this.txtdepoimentoDeparticipantes = new System.Windows.Forms.TextBox();
+            this.txtobservacoes = new System.Windows.Forms.TextBox();
+            this.txtqtdColaboradoresenvolvidos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtpublicoBeneficiados = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.txtItensConfeccionados = new System.Windows.Forms.TextBox();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -266,147 +265,140 @@
             this.Observaçoes.TabIndex = 18;
             this.Observaçoes.Text = "Observações";
             // 
-            // textBox1
+            // txtidacoes
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 19;
+            this.txtidacoes.Location = new System.Drawing.Point(16, 108);
+            this.txtidacoes.Name = "txtidacoes";
+            this.txtidacoes.Size = new System.Drawing.Size(100, 20);
+            this.txtidacoes.TabIndex = 19;
             // 
-            // textBox2
+            // txtnomeAcao
             // 
-            this.textBox2.Location = new System.Drawing.Point(165, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 20);
-            this.textBox2.TabIndex = 20;
+            this.txtnomeAcao.Location = new System.Drawing.Point(165, 108);
+            this.txtnomeAcao.Name = "txtnomeAcao";
+            this.txtnomeAcao.Size = new System.Drawing.Size(277, 20);
+            this.txtnomeAcao.TabIndex = 20;
             // 
-            // textBox3
+            // txtinstituicaoBeneficiada
             // 
-            this.textBox3.Location = new System.Drawing.Point(1083, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(140, 20);
-            this.textBox3.TabIndex = 21;
+            this.txtinstituicaoBeneficiada.Location = new System.Drawing.Point(1083, 108);
+            this.txtinstituicaoBeneficiada.Name = "txtinstituicaoBeneficiada";
+            this.txtinstituicaoBeneficiada.Size = new System.Drawing.Size(140, 20);
+            this.txtinstituicaoBeneficiada.TabIndex = 21;
             // 
-            // textBox4
+            // txtfuncionarioResponsavel
             // 
-            this.textBox4.Location = new System.Drawing.Point(731, 108);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(206, 20);
-            this.textBox4.TabIndex = 22;
+            this.txtfuncionarioResponsavel.Location = new System.Drawing.Point(731, 108);
+            this.txtfuncionarioResponsavel.Name = "txtfuncionarioResponsavel";
+            this.txtfuncionarioResponsavel.Size = new System.Drawing.Size(206, 20);
+            this.txtfuncionarioResponsavel.TabIndex = 22;
             // 
-            // textBox5
+            // txtqtdDepessoasimpactadas
             // 
-            this.textBox5.Location = new System.Drawing.Point(477, 108);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 20);
-            this.textBox5.TabIndex = 23;
+            this.txtqtdDepessoasimpactadas.Location = new System.Drawing.Point(477, 108);
+            this.txtqtdDepessoasimpactadas.Name = "txtqtdDepessoasimpactadas";
+            this.txtqtdDepessoasimpactadas.Size = new System.Drawing.Size(215, 20);
+            this.txtqtdDepessoasimpactadas.TabIndex = 23;
             // 
-            // textBox6
+            // txtdescricaoDaacoes
             // 
-            this.textBox6.Location = new System.Drawing.Point(16, 370);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox6.Size = new System.Drawing.Size(196, 55);
-            this.textBox6.TabIndex = 24;
+            this.txtdescricaoDaacoes.Location = new System.Drawing.Point(16, 370);
+            this.txtdescricaoDaacoes.Multiline = true;
+            this.txtdescricaoDaacoes.Name = "txtdescricaoDaacoes";
+            this.txtdescricaoDaacoes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtdescricaoDaacoes.Size = new System.Drawing.Size(196, 55);
+            this.txtdescricaoDaacoes.TabIndex = 24;
             // 
-            // textBox7
+            // txtqtdAlunosenvolvidos
             // 
-            this.textBox7.Location = new System.Drawing.Point(623, 188);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(240, 20);
-            this.textBox7.TabIndex = 25;
+            this.txtqtdAlunosenvolvidos.Location = new System.Drawing.Point(623, 188);
+            this.txtqtdAlunosenvolvidos.Name = "txtqtdAlunosenvolvidos";
+            this.txtqtdAlunosenvolvidos.Size = new System.Drawing.Size(240, 20);
+            this.txtqtdAlunosenvolvidos.TabIndex = 25;
             // 
-            // textBox8
+            // txtverbaDosenac
             // 
-            this.textBox8.Location = new System.Drawing.Point(12, 188);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(123, 20);
-            this.textBox8.TabIndex = 26;
+            this.txtverbaDosenac.Location = new System.Drawing.Point(12, 188);
+            this.txtverbaDosenac.Name = "txtverbaDosenac";
+            this.txtverbaDosenac.Size = new System.Drawing.Size(123, 20);
+            this.txtverbaDosenac.TabIndex = 26;
             // 
-            // textBox9
+            // txtvalorDedoacao
             // 
-            this.textBox9.Location = new System.Drawing.Point(395, 188);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(157, 20);
-            this.textBox9.TabIndex = 27;
+            this.txtvalorDedoacao.Location = new System.Drawing.Point(210, 188);
+            this.txtvalorDedoacao.Name = "txtvalorDedoacao";
+            this.txtvalorDedoacao.Size = new System.Drawing.Size(124, 20);
+            this.txtvalorDedoacao.TabIndex = 28;
             // 
-            // textBox10
+            // txtitensParaacao
             // 
-            this.textBox10.Location = new System.Drawing.Point(210, 188);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(124, 20);
-            this.textBox10.TabIndex = 28;
+            this.txtitensParaacao.Location = new System.Drawing.Point(531, 371);
+            this.txtitensParaacao.Multiline = true;
+            this.txtitensParaacao.Name = "txtitensParaacao";
+            this.txtitensParaacao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtitensParaacao.Size = new System.Drawing.Size(126, 56);
+            this.txtitensParaacao.TabIndex = 29;
             // 
-            // textBox11
+            // txtcolaboradosQueparticiparam
             // 
-            this.textBox11.Location = new System.Drawing.Point(531, 371);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox11.Size = new System.Drawing.Size(126, 56);
-            this.textBox11.TabIndex = 29;
+            this.txtcolaboradosQueparticiparam.Location = new System.Drawing.Point(15, 275);
+            this.txtcolaboradosQueparticiparam.Multiline = true;
+            this.txtcolaboradosQueparticiparam.Name = "txtcolaboradosQueparticiparam";
+            this.txtcolaboradosQueparticiparam.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtcolaboradosQueparticiparam.Size = new System.Drawing.Size(281, 54);
+            this.txtcolaboradosQueparticiparam.TabIndex = 32;
             // 
-            // textBox14
+            // txtimpactoSocialGerado
             // 
-            this.textBox14.Location = new System.Drawing.Point(15, 275);
-            this.textBox14.Multiline = true;
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox14.Size = new System.Drawing.Size(281, 54);
-            this.textBox14.TabIndex = 32;
+            this.txtimpactoSocialGerado.Location = new System.Drawing.Point(289, 371);
+            this.txtimpactoSocialGerado.Multiline = true;
+            this.txtimpactoSocialGerado.Name = "txtimpactoSocialGerado";
+            this.txtimpactoSocialGerado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtimpactoSocialGerado.Size = new System.Drawing.Size(168, 54);
+            this.txtimpactoSocialGerado.TabIndex = 33;
             // 
-            // textBox15
+            // txtQuantidadeDeItensArrecadados
             // 
-            this.textBox15.Location = new System.Drawing.Point(289, 371);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox15.Size = new System.Drawing.Size(168, 54);
-            this.textBox15.TabIndex = 33;
+            this.txtQuantidadeDeItensArrecadados.Location = new System.Drawing.Point(638, 276);
+            this.txtQuantidadeDeItensArrecadados.Multiline = true;
+            this.txtQuantidadeDeItensArrecadados.Name = "txtQuantidadeDeItensArrecadados";
+            this.txtQuantidadeDeItensArrecadados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtQuantidadeDeItensArrecadados.Size = new System.Drawing.Size(240, 53);
+            this.txtQuantidadeDeItensArrecadados.TabIndex = 34;
             // 
-            // textBox16
+            // txtcursosParticipantes
             // 
-            this.textBox16.Location = new System.Drawing.Point(638, 276);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox16.Size = new System.Drawing.Size(240, 53);
-            this.textBox16.TabIndex = 34;
+            this.txtcursosParticipantes.Location = new System.Drawing.Point(385, 276);
+            this.txtcursosParticipantes.Multiline = true;
+            this.txtcursosParticipantes.Name = "txtcursosParticipantes";
+            this.txtcursosParticipantes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtcursosParticipantes.Size = new System.Drawing.Size(167, 43);
+            this.txtcursosParticipantes.TabIndex = 35;
             // 
-            // textBox17
+            // txtdepoimentoDeparticipantes
             // 
-            this.textBox17.Location = new System.Drawing.Point(385, 276);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox17.Size = new System.Drawing.Size(167, 43);
-            this.textBox17.TabIndex = 35;
+            this.txtdepoimentoDeparticipantes.Location = new System.Drawing.Point(764, 371);
+            this.txtdepoimentoDeparticipantes.Multiline = true;
+            this.txtdepoimentoDeparticipantes.Name = "txtdepoimentoDeparticipantes";
+            this.txtdepoimentoDeparticipantes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtdepoimentoDeparticipantes.Size = new System.Drawing.Size(206, 54);
+            this.txtdepoimentoDeparticipantes.TabIndex = 36;
             // 
-            // textBox18
+            // txtobservacoes
             // 
-            this.textBox18.Location = new System.Drawing.Point(764, 371);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox18.Size = new System.Drawing.Size(206, 54);
-            this.textBox18.TabIndex = 36;
+            this.txtobservacoes.Location = new System.Drawing.Point(338, 468);
+            this.txtobservacoes.Multiline = true;
+            this.txtobservacoes.Name = "txtobservacoes";
+            this.txtobservacoes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtobservacoes.Size = new System.Drawing.Size(652, 131);
+            this.txtobservacoes.TabIndex = 37;
             // 
-            // textBox19
+            // txtqtdColaboradoresenvolvidos
             // 
-            this.textBox19.Location = new System.Drawing.Point(338, 468);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox19.Size = new System.Drawing.Size(652, 131);
-            this.textBox19.TabIndex = 37;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(939, 188);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(295, 20);
-            this.textBox12.TabIndex = 38;
+            this.txtqtdColaboradoresenvolvidos.Location = new System.Drawing.Point(939, 188);
+            this.txtqtdColaboradoresenvolvidos.Name = "txtqtdColaboradoresenvolvidos";
+            this.txtqtdColaboradoresenvolvidos.Size = new System.Drawing.Size(295, 20);
+            this.txtqtdColaboradoresenvolvidos.TabIndex = 38;
             // 
             // label1
             // 
@@ -418,53 +410,34 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "Ações";
             // 
-            // btnEditar
-            // 
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnEditar.Location = new System.Drawing.Point(681, 619);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 44;
-            this.btnEditar.Text = "Excluir";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnAtualizar.Location = new System.Drawing.Point(582, 619);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 43;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            // 
             // btnSalvar
             // 
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSalvar.Location = new System.Drawing.Point(477, 619);
+            this.btnSalvar.Location = new System.Drawing.Point(550, 619);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 42;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // textBox13
+            // txtpublicoBeneficiados
             // 
-            this.textBox13.Location = new System.Drawing.Point(939, 276);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(295, 20);
-            this.textBox13.TabIndex = 45;
+            this.txtpublicoBeneficiados.Location = new System.Drawing.Point(939, 276);
+            this.txtpublicoBeneficiados.Name = "txtpublicoBeneficiados";
+            this.txtpublicoBeneficiados.Size = new System.Drawing.Size(295, 20);
+            this.txtpublicoBeneficiados.TabIndex = 45;
             // 
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBuscar.Location = new System.Drawing.Point(775, 619);
+            this.btnBuscar.Location = new System.Drawing.Point(657, 619);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 46;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click_1);
             // 
             // pictureBox2
             // 
@@ -476,37 +449,54 @@
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
             // 
+            // txtItensConfeccionados
+            // 
+            this.txtItensConfeccionados.Location = new System.Drawing.Point(394, 188);
+            this.txtItensConfeccionados.Name = "txtItensConfeccionados";
+            this.txtItensConfeccionados.Size = new System.Drawing.Size(124, 20);
+            this.txtItensConfeccionados.TabIndex = 47;
+            // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnRelatorio.Location = new System.Drawing.Point(759, 619);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(104, 23);
+            this.btnRelatorio.TabIndex = 48;
+            this.btnRelatorio.Text = "Gerar Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
             // frmAções
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
-            this.ClientSize = new System.Drawing.Size(1289, 644);
+            this.ClientSize = new System.Drawing.Size(1306, 670);
+            this.Controls.Add(this.btnRelatorio);
+            this.Controls.Add(this.txtItensConfeccionados);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAtualizar);
+            this.Controls.Add(this.txtpublicoBeneficiados);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtqtdColaboradoresenvolvidos);
+            this.Controls.Add(this.txtobservacoes);
+            this.Controls.Add(this.txtdepoimentoDeparticipantes);
+            this.Controls.Add(this.txtcursosParticipantes);
+            this.Controls.Add(this.txtQuantidadeDeItensArrecadados);
+            this.Controls.Add(this.txtimpactoSocialGerado);
+            this.Controls.Add(this.txtcolaboradosQueparticiparam);
+            this.Controls.Add(this.txtitensParaacao);
+            this.Controls.Add(this.txtvalorDedoacao);
+            this.Controls.Add(this.txtverbaDosenac);
+            this.Controls.Add(this.txtqtdAlunosenvolvidos);
+            this.Controls.Add(this.txtdescricaoDaacoes);
+            this.Controls.Add(this.txtqtdDepessoasimpactadas);
+            this.Controls.Add(this.txtfuncionarioResponsavel);
+            this.Controls.Add(this.txtinstituicaoBeneficiada);
+            this.Controls.Add(this.txtnomeAcao);
+            this.Controls.Add(this.txtidacoes);
             this.Controls.Add(this.Observaçoes);
             this.Controls.Add(this.depoimentoDeParticipantes);
             this.Controls.Add(this.impactoSocialgerado);
@@ -557,30 +547,29 @@
         private System.Windows.Forms.Label impactoSocialgerado;
         private System.Windows.Forms.Label depoimentoDeParticipantes;
         private System.Windows.Forms.Label Observaçoes;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtidacoes;
+        private System.Windows.Forms.TextBox txtnomeAcao;
+        private System.Windows.Forms.TextBox txtinstituicaoBeneficiada;
+        private System.Windows.Forms.TextBox txtfuncionarioResponsavel;
+        private System.Windows.Forms.TextBox txtqtdDepessoasimpactadas;
+        private System.Windows.Forms.TextBox txtdescricaoDaacoes;
+        private System.Windows.Forms.TextBox txtqtdAlunosenvolvidos;
+        private System.Windows.Forms.TextBox txtverbaDosenac;
+        private System.Windows.Forms.TextBox txtvalorDedoacao;
+        private System.Windows.Forms.TextBox txtitensParaacao;
+        private System.Windows.Forms.TextBox txtcolaboradosQueparticiparam;
+        private System.Windows.Forms.TextBox txtimpactoSocialGerado;
+        private System.Windows.Forms.TextBox txtQuantidadeDeItensArrecadados;
+        private System.Windows.Forms.TextBox txtcursosParticipantes;
+        private System.Windows.Forms.TextBox txtdepoimentoDeparticipantes;
+        private System.Windows.Forms.TextBox txtobservacoes;
+        private System.Windows.Forms.TextBox txtqtdColaboradoresenvolvidos;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtpublicoBeneficiados;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtItensConfeccionados;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }

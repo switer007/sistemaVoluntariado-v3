@@ -43,5 +43,61 @@ namespace sistemaVoluntariado
                 MessageBox.Show("Falha ao tentar conectar\n\n" + ex.Message);
             }
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                //pega o idAluno da linha selecionada
+                int idResponsavel = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idResponsavel"].Value);
+                var confirm = MessageBox.Show("Tem certeza que deseja excluir este Responsável?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (confirm == DialogResult.Yes)
+                {
+                    try
+                    {
+                        using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                        {
+                            cn.Open();
+                            string sql = "DELETE FROM responsavel WHERE idResponsavel = @id";
+                            using (SqlCommand cmd = new SqlCommand(sql, cn))
+                            {
+                                cmd.Parameters.AddWithValue("@id", idResponsavel);
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("Responsavel excluído com sucesso!");
+                                BuscarNovamente(); //recarrega a tabela após exclusão
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao excluir usuario.\n\n" + ex.Message);
+                    }
+                }
+            }
+        }
+
+        private void BuscarNovamente()
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                {
+                    cn.Open();
+                    var SqlQuery = "select * from responsavel where nomeResponsavel like '%" + txtBuscaResponsavel.Text + "%'";
+                    using (SqlDataAdapter da = new SqlDataAdapter(SqlQuery, cn))
+                    {
+                        using (DataTable dt = new DataTable())
+                        {
+                            da.Fill(dt);
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar dados. \n\n" + ex.Message);
+            }
+        }
     }
 }

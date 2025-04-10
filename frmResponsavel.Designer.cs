@@ -33,21 +33,19 @@
             this.telefoneResponsavel = new System.Windows.Forms.Label();
             this.emailResponsavel = new System.Windows.Forms.Label();
             this.enderecoResponsavel = new System.Windows.Forms.Label();
-            this.profissaoResponsavel = new System.Windows.Forms.Label();
             this.observacaoResponsavel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtidResponsavel = new System.Windows.Forms.TextBox();
+            this.txtnomeResponsavel = new System.Windows.Forms.TextBox();
+            this.txttelefoneResponsavel = new System.Windows.Forms.TextBox();
+            this.txtemailResponsavel = new System.Windows.Forms.TextBox();
+            this.txtenderecoResponsavel = new System.Windows.Forms.TextBox();
+            this.txtprofissionalResponsavel = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txtobservacaoResponsavel = new System.Windows.Forms.TextBox();
+            this.Profissional = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +88,7 @@
             this.emailResponsavel.AutoSize = true;
             this.emailResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.emailResponsavel.Location = new System.Drawing.Point(425, 255);
+            this.emailResponsavel.Location = new System.Drawing.Point(454, 254);
             this.emailResponsavel.Name = "emailResponsavel";
             this.emailResponsavel.Size = new System.Drawing.Size(57, 24);
             this.emailResponsavel.TabIndex = 3;
@@ -107,17 +105,6 @@
             this.enderecoResponsavel.TabIndex = 4;
             this.enderecoResponsavel.Text = "Endereço";
             // 
-            // profissaoResponsavel
-            // 
-            this.profissaoResponsavel.AutoSize = true;
-            this.profissaoResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.profissaoResponsavel.ForeColor = System.Drawing.SystemColors.Control;
-            this.profissaoResponsavel.Location = new System.Drawing.Point(417, 207);
-            this.profissaoResponsavel.Name = "profissaoResponsavel";
-            this.profissaoResponsavel.Size = new System.Drawing.Size(86, 24);
-            this.profissaoResponsavel.TabIndex = 5;
-            this.profissaoResponsavel.Text = "Profissão";
-            // 
             // observacaoResponsavel
             // 
             this.observacaoResponsavel.AutoSize = true;
@@ -129,47 +116,47 @@
             this.observacaoResponsavel.TabIndex = 6;
             this.observacaoResponsavel.Text = "Observação:";
             // 
-            // textBox1
+            // txtidResponsavel
             // 
-            this.textBox1.Location = new System.Drawing.Point(88, 161);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtidResponsavel.Location = new System.Drawing.Point(88, 161);
+            this.txtidResponsavel.Name = "txtidResponsavel";
+            this.txtidResponsavel.Size = new System.Drawing.Size(199, 20);
+            this.txtidResponsavel.TabIndex = 7;
             // 
-            // textBox2
+            // txtnomeResponsavel
             // 
-            this.textBox2.Location = new System.Drawing.Point(187, 216);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtnomeResponsavel.Location = new System.Drawing.Point(187, 216);
+            this.txtnomeResponsavel.Name = "txtnomeResponsavel";
+            this.txtnomeResponsavel.Size = new System.Drawing.Size(100, 20);
+            this.txtnomeResponsavel.TabIndex = 8;
             // 
-            // textBox3
+            // txttelefoneResponsavel
             // 
-            this.textBox3.Location = new System.Drawing.Point(103, 259);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 20);
-            this.textBox3.TabIndex = 9;
+            this.txttelefoneResponsavel.Location = new System.Drawing.Point(103, 259);
+            this.txttelefoneResponsavel.Name = "txttelefoneResponsavel";
+            this.txttelefoneResponsavel.Size = new System.Drawing.Size(184, 20);
+            this.txttelefoneResponsavel.TabIndex = 9;
             // 
-            // textBox4
+            // txtemailResponsavel
             // 
-            this.textBox4.Location = new System.Drawing.Point(488, 255);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtemailResponsavel.Location = new System.Drawing.Point(530, 255);
+            this.txtemailResponsavel.Name = "txtemailResponsavel";
+            this.txtemailResponsavel.Size = new System.Drawing.Size(222, 20);
+            this.txtemailResponsavel.TabIndex = 10;
             // 
-            // textBox5
+            // txtenderecoResponsavel
             // 
-            this.textBox5.Location = new System.Drawing.Point(517, 157);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 20);
-            this.textBox5.TabIndex = 11;
+            this.txtenderecoResponsavel.Location = new System.Drawing.Point(559, 156);
+            this.txtenderecoResponsavel.Name = "txtenderecoResponsavel";
+            this.txtenderecoResponsavel.Size = new System.Drawing.Size(193, 20);
+            this.txtenderecoResponsavel.TabIndex = 11;
             // 
-            // textBox6
+            // txtprofissionalResponsavel
             // 
-            this.textBox6.Location = new System.Drawing.Point(517, 211);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 20);
-            this.textBox6.TabIndex = 12;
+            this.txtprofissionalResponsavel.Location = new System.Drawing.Point(559, 212);
+            this.txtprofissionalResponsavel.Name = "txtprofissionalResponsavel";
+            this.txtprofissionalResponsavel.Size = new System.Drawing.Size(193, 20);
+            this.txtprofissionalResponsavel.TabIndex = 12;
             // 
             // label1
             // 
@@ -182,40 +169,21 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Responsável";
             // 
-            // btnEditar
-            // 
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnEditar.Location = new System.Drawing.Point(478, 400);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 23;
-            this.btnEditar.Text = "Excluir";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnAtualizar.Location = new System.Drawing.Point(379, 400);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 22;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            // 
             // btnSalvar
             // 
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSalvar.Location = new System.Drawing.Point(274, 400);
+            this.btnSalvar.Location = new System.Drawing.Point(323, 400);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 21;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBuscar.Location = new System.Drawing.Point(572, 400);
+            this.btnBuscar.Location = new System.Drawing.Point(436, 400);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 25;
@@ -233,14 +201,25 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox19
+            // txtobservacaoResponsavel
             // 
-            this.textBox19.Location = new System.Drawing.Point(136, 300);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox19.Size = new System.Drawing.Size(574, 85);
-            this.textBox19.TabIndex = 38;
+            this.txtobservacaoResponsavel.Location = new System.Drawing.Point(136, 300);
+            this.txtobservacaoResponsavel.Multiline = true;
+            this.txtobservacaoResponsavel.Name = "txtobservacaoResponsavel";
+            this.txtobservacaoResponsavel.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtobservacaoResponsavel.Size = new System.Drawing.Size(574, 85);
+            this.txtobservacaoResponsavel.TabIndex = 38;
+            // 
+            // Profissional
+            // 
+            this.Profissional.AutoSize = true;
+            this.Profissional.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Profissional.ForeColor = System.Drawing.SystemColors.Control;
+            this.Profissional.Location = new System.Drawing.Point(334, 212);
+            this.Profissional.Name = "Profissional";
+            this.Profissional.Size = new System.Drawing.Size(219, 24);
+            this.Profissional.TabIndex = 39;
+            this.Profissional.Text = "Profissional Responsável";
             // 
             // frmResponsavel
             // 
@@ -248,21 +227,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(859, 514);
-            this.Controls.Add(this.textBox19);
+            this.Controls.Add(this.Profissional);
+            this.Controls.Add(this.txtobservacaoResponsavel);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtprofissionalResponsavel);
+            this.Controls.Add(this.txtenderecoResponsavel);
+            this.Controls.Add(this.txtemailResponsavel);
+            this.Controls.Add(this.txttelefoneResponsavel);
+            this.Controls.Add(this.txtnomeResponsavel);
+            this.Controls.Add(this.txtidResponsavel);
             this.Controls.Add(this.observacaoResponsavel);
-            this.Controls.Add(this.profissaoResponsavel);
             this.Controls.Add(this.enderecoResponsavel);
             this.Controls.Add(this.emailResponsavel);
             this.Controls.Add(this.telefoneResponsavel);
@@ -283,20 +260,18 @@
         private System.Windows.Forms.Label telefoneResponsavel;
         private System.Windows.Forms.Label emailResponsavel;
         private System.Windows.Forms.Label enderecoResponsavel;
-        private System.Windows.Forms.Label profissaoResponsavel;
         private System.Windows.Forms.Label observacaoResponsavel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtidResponsavel;
+        private System.Windows.Forms.TextBox txtnomeResponsavel;
+        private System.Windows.Forms.TextBox txttelefoneResponsavel;
+        private System.Windows.Forms.TextBox txtemailResponsavel;
+        private System.Windows.Forms.TextBox txtenderecoResponsavel;
+        private System.Windows.Forms.TextBox txtprofissionalResponsavel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txtobservacaoResponsavel;
+        private System.Windows.Forms.Label Profissional;
     }
 }

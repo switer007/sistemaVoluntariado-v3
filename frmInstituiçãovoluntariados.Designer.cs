@@ -31,27 +31,25 @@
             this.IDInstituicao = new System.Windows.Forms.Label();
             this.nomeInstituicao = new System.Windows.Forms.Label();
             this.SetorInstituicao = new System.Windows.Forms.Label();
-            this.cidadeInstituicao = new System.Windows.Forms.Label();
             this.emailInstituicao = new System.Windows.Forms.Label();
             this.contatoInstituicao = new System.Windows.Forms.Label();
             this.enderecoInstituicao = new System.Windows.Forms.Label();
             this.telefoneInstituicao = new System.Windows.Forms.Label();
             this.cnpjInstituicao = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtSetor = new System.Windows.Forms.TextBox();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtContato = new System.Windows.Forms.TextBox();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
-            this.txtCNPJ = new System.Windows.Forms.TextBox();
+            this.txtidInstituicao = new System.Windows.Forms.TextBox();
+            this.txtnomeInstituicao = new System.Windows.Forms.TextBox();
+            this.txtsetorInstituicao = new System.Windows.Forms.TextBox();
+            this.txtemailInstituicao = new System.Windows.Forms.TextBox();
+            this.txtcontatoInstituicao = new System.Windows.Forms.TextBox();
+            this.txtenderecoInstituicao = new System.Windows.Forms.TextBox();
+            this.txttelefoneInstituicao = new System.Windows.Forms.TextBox();
+            this.txtCNPJInstituicao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtcidadelInstituicao = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,23 +86,12 @@
             this.SetorInstituicao.TabIndex = 2;
             this.SetorInstituicao.Text = "Setor";
             // 
-            // cidadeInstituicao
-            // 
-            this.cidadeInstituicao.AutoSize = true;
-            this.cidadeInstituicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cidadeInstituicao.ForeColor = System.Drawing.SystemColors.Control;
-            this.cidadeInstituicao.Location = new System.Drawing.Point(25, 294);
-            this.cidadeInstituicao.Name = "cidadeInstituicao";
-            this.cidadeInstituicao.Size = new System.Drawing.Size(70, 24);
-            this.cidadeInstituicao.TabIndex = 3;
-            this.cidadeInstituicao.Text = "Cidade";
-            // 
             // emailInstituicao
             // 
             this.emailInstituicao.AutoSize = true;
             this.emailInstituicao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailInstituicao.ForeColor = System.Drawing.SystemColors.Control;
-            this.emailInstituicao.Location = new System.Drawing.Point(28, 365);
+            this.emailInstituicao.Location = new System.Drawing.Point(28, 305);
             this.emailInstituicao.Name = "emailInstituicao";
             this.emailInstituicao.Size = new System.Drawing.Size(57, 24);
             this.emailInstituicao.TabIndex = 4;
@@ -154,68 +141,61 @@
             this.cnpjInstituicao.TabIndex = 8;
             this.cnpjInstituicao.Text = "CNPJ";
             // 
-            // txtID
+            // txtidInstituicao
             // 
-            this.txtID.Location = new System.Drawing.Point(29, 137);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(214, 20);
-            this.txtID.TabIndex = 9;
+            this.txtidInstituicao.Location = new System.Drawing.Point(29, 137);
+            this.txtidInstituicao.Name = "txtidInstituicao";
+            this.txtidInstituicao.Size = new System.Drawing.Size(214, 20);
+            this.txtidInstituicao.TabIndex = 9;
             // 
-            // txtNome
+            // txtnomeInstituicao
             // 
-            this.txtNome.Location = new System.Drawing.Point(29, 207);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(257, 20);
-            this.txtNome.TabIndex = 10;
+            this.txtnomeInstituicao.Location = new System.Drawing.Point(29, 207);
+            this.txtnomeInstituicao.Name = "txtnomeInstituicao";
+            this.txtnomeInstituicao.Size = new System.Drawing.Size(257, 20);
+            this.txtnomeInstituicao.TabIndex = 10;
             // 
-            // txtSetor
+            // txtsetorInstituicao
             // 
-            this.txtSetor.Location = new System.Drawing.Point(29, 262);
-            this.txtSetor.Name = "txtSetor";
-            this.txtSetor.Size = new System.Drawing.Size(214, 20);
-            this.txtSetor.TabIndex = 11;
+            this.txtsetorInstituicao.Location = new System.Drawing.Point(29, 262);
+            this.txtsetorInstituicao.Name = "txtsetorInstituicao";
+            this.txtsetorInstituicao.Size = new System.Drawing.Size(214, 20);
+            this.txtsetorInstituicao.TabIndex = 11;
             // 
-            // txtCidade
+            // txtemailInstituicao
             // 
-            this.txtCidade.Location = new System.Drawing.Point(29, 328);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(193, 20);
-            this.txtCidade.TabIndex = 12;
+            this.txtemailInstituicao.Location = new System.Drawing.Point(29, 332);
+            this.txtemailInstituicao.Name = "txtemailInstituicao";
+            this.txtemailInstituicao.Size = new System.Drawing.Size(248, 20);
+            this.txtemailInstituicao.TabIndex = 13;
             // 
-            // txtEmail
+            // txtcontatoInstituicao
             // 
-            this.txtEmail.Location = new System.Drawing.Point(29, 392);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(248, 20);
-            this.txtEmail.TabIndex = 13;
+            this.txtcontatoInstituicao.Location = new System.Drawing.Point(501, 137);
+            this.txtcontatoInstituicao.Name = "txtcontatoInstituicao";
+            this.txtcontatoInstituicao.Size = new System.Drawing.Size(271, 20);
+            this.txtcontatoInstituicao.TabIndex = 14;
             // 
-            // txtContato
+            // txtenderecoInstituicao
             // 
-            this.txtContato.Location = new System.Drawing.Point(501, 137);
-            this.txtContato.Name = "txtContato";
-            this.txtContato.Size = new System.Drawing.Size(271, 20);
-            this.txtContato.TabIndex = 14;
+            this.txtenderecoInstituicao.Location = new System.Drawing.Point(501, 196);
+            this.txtenderecoInstituicao.Name = "txtenderecoInstituicao";
+            this.txtenderecoInstituicao.Size = new System.Drawing.Size(253, 20);
+            this.txtenderecoInstituicao.TabIndex = 15;
             // 
-            // txtEndereco
+            // txttelefoneInstituicao
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(501, 196);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(253, 20);
-            this.txtEndereco.TabIndex = 15;
+            this.txttelefoneInstituicao.Location = new System.Drawing.Point(501, 251);
+            this.txttelefoneInstituicao.Name = "txttelefoneInstituicao";
+            this.txttelefoneInstituicao.Size = new System.Drawing.Size(139, 20);
+            this.txttelefoneInstituicao.TabIndex = 16;
             // 
-            // txtTelefone
+            // txtCNPJInstituicao
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(501, 251);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(139, 20);
-            this.txtTelefone.TabIndex = 16;
-            // 
-            // txtCNPJ
-            // 
-            this.txtCNPJ.Location = new System.Drawing.Point(501, 310);
-            this.txtCNPJ.Name = "txtCNPJ";
-            this.txtCNPJ.Size = new System.Drawing.Size(191, 20);
-            this.txtCNPJ.TabIndex = 17;
+            this.txtCNPJInstituicao.Location = new System.Drawing.Point(501, 310);
+            this.txtCNPJInstituicao.Name = "txtCNPJInstituicao";
+            this.txtCNPJInstituicao.Size = new System.Drawing.Size(191, 20);
+            this.txtCNPJInstituicao.TabIndex = 17;
             // 
             // label1
             // 
@@ -224,44 +204,25 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(190, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 24);
+            this.label1.Size = new System.Drawing.Size(92, 24);
             this.label1.TabIndex = 19;
-            this.label1.Text = "Voluntariados";
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnEditar.Location = new System.Drawing.Point(617, 392);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 23;
-            this.btnEditar.Text = "Excluir";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnAtualizar.Location = new System.Drawing.Point(518, 392);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 22;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.label1.Text = "Instituição";
             // 
             // btnSalvar
             // 
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSalvar.Location = new System.Drawing.Point(413, 392);
+            this.btnSalvar.Location = new System.Drawing.Point(518, 389);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 21;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBuscar.Location = new System.Drawing.Point(713, 392);
+            this.btnBuscar.Location = new System.Drawing.Point(617, 389);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 25;
@@ -278,33 +239,49 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // txtcidadelInstituicao
+            // 
+            this.txtcidadelInstituicao.Location = new System.Drawing.Point(32, 392);
+            this.txtcidadelInstituicao.Name = "txtcidadelInstituicao";
+            this.txtcidadelInstituicao.Size = new System.Drawing.Size(248, 20);
+            this.txtcidadelInstituicao.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(28, 365);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 24);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Cidade";
+            // 
             // frmInstituiçãovoluntariados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtcidadelInstituicao);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtCNPJ);
-            this.Controls.Add(this.txtTelefone);
-            this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtContato);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtCidade);
-            this.Controls.Add(this.txtSetor);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtCNPJInstituicao);
+            this.Controls.Add(this.txttelefoneInstituicao);
+            this.Controls.Add(this.txtenderecoInstituicao);
+            this.Controls.Add(this.txtcontatoInstituicao);
+            this.Controls.Add(this.txtemailInstituicao);
+            this.Controls.Add(this.txtsetorInstituicao);
+            this.Controls.Add(this.txtnomeInstituicao);
+            this.Controls.Add(this.txtidInstituicao);
             this.Controls.Add(this.cnpjInstituicao);
             this.Controls.Add(this.telefoneInstituicao);
             this.Controls.Add(this.enderecoInstituicao);
             this.Controls.Add(this.contatoInstituicao);
             this.Controls.Add(this.emailInstituicao);
-            this.Controls.Add(this.cidadeInstituicao);
             this.Controls.Add(this.SetorInstituicao);
             this.Controls.Add(this.nomeInstituicao);
             this.Controls.Add(this.IDInstituicao);
@@ -322,26 +299,24 @@
         private System.Windows.Forms.Label IDInstituicao;
         private System.Windows.Forms.Label nomeInstituicao;
         private System.Windows.Forms.Label SetorInstituicao;
-        private System.Windows.Forms.Label cidadeInstituicao;
         private System.Windows.Forms.Label emailInstituicao;
         private System.Windows.Forms.Label contatoInstituicao;
         private System.Windows.Forms.Label enderecoInstituicao;
         private System.Windows.Forms.Label telefoneInstituicao;
         private System.Windows.Forms.Label cnpjInstituicao;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtSetor;
-        private System.Windows.Forms.TextBox txtCidade;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtContato;
-        private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.TextBox txtTelefone;
-        private System.Windows.Forms.TextBox txtCNPJ;
+        private System.Windows.Forms.TextBox txtidInstituicao;
+        private System.Windows.Forms.TextBox txtnomeInstituicao;
+        private System.Windows.Forms.TextBox txtsetorInstituicao;
+        private System.Windows.Forms.TextBox txtemailInstituicao;
+        private System.Windows.Forms.TextBox txtcontatoInstituicao;
+        private System.Windows.Forms.TextBox txtenderecoInstituicao;
+        private System.Windows.Forms.TextBox txttelefoneInstituicao;
+        private System.Windows.Forms.TextBox txtCNPJInstituicao;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtcidadelInstituicao;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -28,38 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtIDVoluntario = new System.Windows.Forms.TextBox();
+            this.txtidVoluntario = new System.Windows.Forms.TextBox();
             this.txtnomeVoluntario = new System.Windows.Forms.TextBox();
             this.txttelefoneVoluntario = new System.Windows.Forms.TextBox();
             this.txtemailVoluntario = new System.Windows.Forms.TextBox();
             this.txtenderecoVoluntario = new System.Windows.Forms.TextBox();
             this.txtprofissaoVoluntario = new System.Windows.Forms.TextBox();
-            this.txtnomedologinVoluntario = new System.Windows.Forms.TextBox();
-            this.txtsenhaVoluntario = new System.Windows.Forms.TextBox();
             this.idVoluntario = new System.Windows.Forms.Label();
             this.nomeVoluntario = new System.Windows.Forms.Label();
             this.telefoneVoluntario = new System.Windows.Forms.Label();
             this.emailVoluntario = new System.Windows.Forms.Label();
             this.enderecoVoluntario = new System.Windows.Forms.Label();
             this.profissaoVoluntario = new System.Windows.Forms.Label();
-            this.nomedeloginVoluntario = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtobsVoluntario = new System.Windows.Forms.TextBox();
+            this.txt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtIDVoluntario
+            // txtidVoluntario
             // 
-            this.txtIDVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDVoluntario.Location = new System.Drawing.Point(35, 145);
-            this.txtIDVoluntario.Name = "txtIDVoluntario";
-            this.txtIDVoluntario.Size = new System.Drawing.Size(100, 26);
-            this.txtIDVoluntario.TabIndex = 0;
+            this.txtidVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidVoluntario.Location = new System.Drawing.Point(35, 145);
+            this.txtidVoluntario.Name = "txtidVoluntario";
+            this.txtidVoluntario.Size = new System.Drawing.Size(100, 26);
+            this.txtidVoluntario.TabIndex = 0;
             // 
             // txtnomeVoluntario
             // 
@@ -80,7 +76,7 @@
             // txtemailVoluntario
             // 
             this.txtemailVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtemailVoluntario.Location = new System.Drawing.Point(453, 143);
+            this.txtemailVoluntario.Location = new System.Drawing.Point(450, 143);
             this.txtemailVoluntario.Name = "txtemailVoluntario";
             this.txtemailVoluntario.Size = new System.Drawing.Size(355, 26);
             this.txtemailVoluntario.TabIndex = 3;
@@ -88,7 +84,7 @@
             // txtenderecoVoluntario
             // 
             this.txtenderecoVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtenderecoVoluntario.Location = new System.Drawing.Point(445, 219);
+            this.txtenderecoVoluntario.Location = new System.Drawing.Point(448, 219);
             this.txtenderecoVoluntario.Name = "txtenderecoVoluntario";
             this.txtenderecoVoluntario.Size = new System.Drawing.Size(354, 26);
             this.txtenderecoVoluntario.TabIndex = 4;
@@ -100,22 +96,6 @@
             this.txtprofissaoVoluntario.Name = "txtprofissaoVoluntario";
             this.txtprofissaoVoluntario.Size = new System.Drawing.Size(354, 26);
             this.txtprofissaoVoluntario.TabIndex = 5;
-            // 
-            // txtnomedologinVoluntario
-            // 
-            this.txtnomedologinVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnomedologinVoluntario.Location = new System.Drawing.Point(32, 402);
-            this.txtnomedologinVoluntario.Name = "txtnomedologinVoluntario";
-            this.txtnomedologinVoluntario.Size = new System.Drawing.Size(354, 26);
-            this.txtnomedologinVoluntario.TabIndex = 6;
-            // 
-            // txtsenhaVoluntario
-            // 
-            this.txtsenhaVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsenhaVoluntario.Location = new System.Drawing.Point(442, 404);
-            this.txtsenhaVoluntario.Name = "txtsenhaVoluntario";
-            this.txtsenhaVoluntario.Size = new System.Drawing.Size(176, 26);
-            this.txtsenhaVoluntario.TabIndex = 7;
             // 
             // idVoluntario
             // 
@@ -195,19 +175,6 @@
             this.profissaoVoluntario.Text = "Profissão";
             this.profissaoVoluntario.Click += new System.EventHandler(this.profissaoVoluntario_Click);
             // 
-            // nomedeloginVoluntario
-            // 
-            this.nomedeloginVoluntario.AutoSize = true;
-            this.nomedeloginVoluntario.BackColor = System.Drawing.Color.Transparent;
-            this.nomedeloginVoluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomedeloginVoluntario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.nomedeloginVoluntario.Location = new System.Drawing.Point(31, 375);
-            this.nomedeloginVoluntario.Name = "nomedeloginVoluntario";
-            this.nomedeloginVoluntario.Size = new System.Drawing.Size(141, 24);
-            this.nomedeloginVoluntario.TabIndex = 14;
-            this.nomedeloginVoluntario.Text = "Nome de Login";
-            this.nomedeloginVoluntario.Click += new System.EventHandler(this.nomedeloginVoluntario_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -229,43 +196,12 @@
             this.btnSalvar.TabIndex = 18;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnAtualizar.Location = new System.Drawing.Point(431, 500);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 19;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnEditar.Location = new System.Drawing.Point(530, 500);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 20;
-            this.btnEditar.Text = "Excluir";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(441, 375);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 24);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Senha";
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBuscar.Location = new System.Drawing.Point(627, 500);
+            this.btnBuscar.Location = new System.Drawing.Point(460, 500);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 25;
@@ -282,34 +218,52 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // txtobsVoluntario
+            // 
+            this.txtobsVoluntario.Location = new System.Drawing.Point(50, 394);
+            this.txtobsVoluntario.Multiline = true;
+            this.txtobsVoluntario.Name = "txtobsVoluntario";
+            this.txtobsVoluntario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtobsVoluntario.Size = new System.Drawing.Size(752, 78);
+            this.txtobsVoluntario.TabIndex = 26;
+            this.txtobsVoluntario.UseSystemPasswordChar = true;
+            // 
+            // txt
+            // 
+            this.txt.AutoSize = true;
+            this.txt.BackColor = System.Drawing.Color.Transparent;
+            this.txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txt.Location = new System.Drawing.Point(50, 357);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(112, 24);
+            this.txt.TabIndex = 27;
+            this.txt.Text = "Observação";
+            // 
             // frmVoluntariados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(902, 606);
+            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtobsVoluntario);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.nomedeloginVoluntario);
             this.Controls.Add(this.profissaoVoluntario);
             this.Controls.Add(this.enderecoVoluntario);
             this.Controls.Add(this.emailVoluntario);
             this.Controls.Add(this.telefoneVoluntario);
             this.Controls.Add(this.nomeVoluntario);
             this.Controls.Add(this.idVoluntario);
-            this.Controls.Add(this.txtsenhaVoluntario);
-            this.Controls.Add(this.txtnomedologinVoluntario);
             this.Controls.Add(this.txtprofissaoVoluntario);
             this.Controls.Add(this.txtenderecoVoluntario);
             this.Controls.Add(this.txtemailVoluntario);
             this.Controls.Add(this.txttelefoneVoluntario);
             this.Controls.Add(this.txtnomeVoluntario);
-            this.Controls.Add(this.txtIDVoluntario);
+            this.Controls.Add(this.txtidVoluntario);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmVoluntariados";
             this.Text = "frmVoluntariados";
@@ -322,27 +276,23 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtIDVoluntario;
+        private System.Windows.Forms.TextBox txtidVoluntario;
         private System.Windows.Forms.TextBox txtnomeVoluntario;
         private System.Windows.Forms.TextBox txttelefoneVoluntario;
         private System.Windows.Forms.TextBox txtemailVoluntario;
         private System.Windows.Forms.TextBox txtenderecoVoluntario;
         private System.Windows.Forms.TextBox txtprofissaoVoluntario;
-        private System.Windows.Forms.TextBox txtnomedologinVoluntario;
-        private System.Windows.Forms.TextBox txtsenhaVoluntario;
         private System.Windows.Forms.Label idVoluntario;
         private System.Windows.Forms.Label nomeVoluntario;
         private System.Windows.Forms.Label telefoneVoluntario;
         private System.Windows.Forms.Label emailVoluntario;
         private System.Windows.Forms.Label enderecoVoluntario;
         private System.Windows.Forms.Label profissaoVoluntario;
-        private System.Windows.Forms.Label nomedeloginVoluntario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnAtualizar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.TextBox txtobsVoluntario;
+        private System.Windows.Forms.Label txt;
     }
 }

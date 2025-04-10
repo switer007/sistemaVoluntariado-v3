@@ -36,19 +36,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtidUsuario = new System.Windows.Forms.TextBox();
+            this.txtnomeUsuario = new System.Windows.Forms.TextBox();
+            this.txttelefoneUsuario = new System.Windows.Forms.TextBox();
+            this.txtenderecoUsuario = new System.Windows.Forms.TextBox();
+            this.txtemailUsuario = new System.Windows.Forms.TextBox();
+            this.txtsenhaUsuario = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,61 +131,61 @@
             this.label7.Text = "Senha";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox1
+            // txtidUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(31, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtidUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtidUsuario.Location = new System.Drawing.Point(31, 149);
+            this.txtidUsuario.Name = "txtidUsuario";
+            this.txtidUsuario.Size = new System.Drawing.Size(200, 26);
+            this.txtidUsuario.TabIndex = 7;
             // 
-            // textBox2
+            // txtnomeUsuario
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(31, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(289, 26);
-            this.textBox2.TabIndex = 8;
+            this.txtnomeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnomeUsuario.Location = new System.Drawing.Point(31, 224);
+            this.txtnomeUsuario.Name = "txtnomeUsuario";
+            this.txtnomeUsuario.Size = new System.Drawing.Size(289, 26);
+            this.txtnomeUsuario.TabIndex = 8;
             // 
-            // textBox3
+            // txttelefoneUsuario
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(31, 299);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 26);
-            this.textBox3.TabIndex = 9;
+            this.txttelefoneUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttelefoneUsuario.Location = new System.Drawing.Point(31, 299);
+            this.txttelefoneUsuario.Name = "txttelefoneUsuario";
+            this.txttelefoneUsuario.Size = new System.Drawing.Size(200, 26);
+            this.txttelefoneUsuario.TabIndex = 9;
             // 
-            // textBox4
+            // txtenderecoUsuario
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(491, 224);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(285, 26);
-            this.textBox4.TabIndex = 10;
+            this.txtenderecoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtenderecoUsuario.Location = new System.Drawing.Point(491, 224);
+            this.txtenderecoUsuario.Name = "txtenderecoUsuario";
+            this.txtenderecoUsuario.Size = new System.Drawing.Size(285, 26);
+            this.txtenderecoUsuario.TabIndex = 10;
             // 
-            // textBox5
+            // txtemailUsuario
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(397, 149);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(379, 26);
-            this.textBox5.TabIndex = 11;
+            this.txtemailUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtemailUsuario.Location = new System.Drawing.Point(397, 149);
+            this.txtemailUsuario.Name = "txtemailUsuario";
+            this.txtemailUsuario.Size = new System.Drawing.Size(379, 26);
+            this.txtemailUsuario.TabIndex = 11;
             // 
-            // textBox6
+            // txtsenhaUsuario
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(491, 345);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(171, 26);
-            this.textBox6.TabIndex = 12;
+            this.txtsenhaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtsenhaUsuario.Location = new System.Drawing.Point(491, 345);
+            this.txtsenhaUsuario.Name = "txtsenhaUsuario";
+            this.txtsenhaUsuario.Size = new System.Drawing.Size(171, 26);
+            this.txtsenhaUsuario.TabIndex = 12;
             // 
-            // textBox7
+            // txtusuario
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(476, 299);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(312, 26);
-            this.textBox7.TabIndex = 13;
+            this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtusuario.Location = new System.Drawing.Point(476, 299);
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(312, 26);
+            this.txtusuario.TabIndex = 13;
             // 
             // label8
             // 
@@ -199,30 +198,10 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Cadastro Usuário";
             // 
-            // btnEditar
-            // 
-            this.btnEditar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnEditar.Location = new System.Drawing.Point(474, 424);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditar.TabIndex = 23;
-            this.btnEditar.Text = "Excluir";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnAtualizar.Location = new System.Drawing.Point(375, 424);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 22;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            // 
             // btnSalvar
             // 
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSalvar.Location = new System.Drawing.Point(270, 424);
+            this.btnSalvar.Location = new System.Drawing.Point(359, 424);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 21;
@@ -233,7 +212,7 @@
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBuscar.Location = new System.Drawing.Point(577, 424);
+            this.btnBuscar.Location = new System.Drawing.Point(458, 424);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 24;
@@ -250,25 +229,34 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.Location = new System.Drawing.Point(558, 424);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(104, 23);
+            this.btnRelatorio.TabIndex = 25;
+            this.btnRelatorio.Text = "Gerar Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(938, 578);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtusuario);
+            this.Controls.Add(this.txtsenhaUsuario);
+            this.Controls.Add(this.txtemailUsuario);
+            this.Controls.Add(this.txtenderecoUsuario);
+            this.Controls.Add(this.txttelefoneUsuario);
+            this.Controls.Add(this.txtnomeUsuario);
+            this.Controls.Add(this.txtidUsuario);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -293,18 +281,17 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtidUsuario;
+        private System.Windows.Forms.TextBox txtnomeUsuario;
+        private System.Windows.Forms.TextBox txttelefoneUsuario;
+        private System.Windows.Forms.TextBox txtenderecoUsuario;
+        private System.Windows.Forms.TextBox txtemailUsuario;
+        private System.Windows.Forms.TextBox txtsenhaUsuario;
+        private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }

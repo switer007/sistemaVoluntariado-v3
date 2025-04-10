@@ -136,7 +136,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::sistemaVoluntariado.Properties.Resources.Captura_de_tela_2025_04_02_112843;
-            this.pictureBox6.Location = new System.Drawing.Point(444, 368);
+            this.pictureBox6.Location = new System.Drawing.Point(445, 368);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(85, 76);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

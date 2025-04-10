@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -66,6 +67,51 @@ namespace sistemaVoluntariado
         {
             frmBuscaVoluntarios frm = new frmBuscaVoluntarios();
             frm.ShowDialog();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            {
+                SalvarVoluntario();
+                this.Close();
+            }
+        }
+        private void SalvarVoluntario()
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                {
+                    cn.Open();
+
+                    var sql = "";
+
+                    sql = "INSERT INTO voluntario (idVoluntario, nomeVoluntario, telefoneVoluntario, emailVoluntario, enderecoVoluntario," +
+                        " profissaoVoluntario, observacaoVoluntario) " +
+                        "VALUES (@idVoluntario, @nomeVoluntario, @telefoneVoluntario, @emailVoluntario, @enderecoVoluntario," +
+                        " @profissaoVoluntario, @observacaoVoluntario)";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, cn))
+                    {
+                        cmd.Parameters.AddWithValue("@idVoluntario", (txtidVoluntario.Text));
+                        cmd.Parameters.AddWithValue("@nomeVoluntario", (txtnomeVoluntario.Text));
+                        cmd.Parameters.AddWithValue("@telefoneVoluntario", (txttelefoneVoluntario.Text));
+                        cmd.Parameters.AddWithValue("@emailVoluntario", (txtemailVoluntario.Text));
+                        cmd.Parameters.AddWithValue("@enderecoVoluntario", (txtenderecoVoluntario.Text));
+                        cmd.Parameters.AddWithValue("@profissaoVoluntario", (txtprofissaoVoluntario.Text));
+                        cmd.Parameters.AddWithValue("@observacaoVoluntario", (txtobsVoluntario.Text));
+                        cmd.ExecuteNonQuery();
+                        { 
+                            MessageBox.Show("Salvo com sucesso");
+                        }
+                        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dados não salvos.\n\n" + ex.Message);
+            }
         }
     }
 }
