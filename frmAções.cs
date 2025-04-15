@@ -98,7 +98,7 @@ namespace sistemaVoluntariado
 
         private DataTable BuscarAcao()
         {
-            string query = "SELECT idAcoes, nomeAcao, instituicaoBeneficada, funcionarioResponsavel FROM acoes";
+            string query = "SELECT idAcoes, nomeAcoes, instituicaoBeneficada, funcionarioResponsavel FROM acoes";
             DataTable tabela = new DataTable();
 
             using (SqlConnection conn = new SqlConnection(conexao.IniciarCon))

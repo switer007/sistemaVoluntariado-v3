@@ -66,5 +66,29 @@ namespace sistemaVoluntariado
         {
 
         }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        
+        {
+            DataTable responsavel = BuscarResponsavel();
+            frmRelatorioResponsavel relatorio = new frmRelatorioResponsavel ();
+            relatorio.CarregarDados(responsavel);
+            relatorio.ShowDialog();
+        }
+
+        private DataTable BuscarResponsavel()
+        {
+            string query = "SELECT idResponsavel, nomeResponsavel, emailResponsavel, enderecoResponsavel FROM responsavel";
+            DataTable tabela = new DataTable();
+
+            using (SqlConnection conn = new SqlConnection(conexao.IniciarCon))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+            {
+                conn.Open();
+                da.Fill(tabela);
+            }
+            return tabela;
+        }
     }
 }

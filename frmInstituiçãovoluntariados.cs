@@ -57,5 +57,28 @@ namespace sistemaVoluntariado
                     MessageBox.Show("dados nao salvos.\n\n" + ex.Message);
                 }
         }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+            DataTable instituicao = BuscarInstituicao();
+            frmRelatorioInstituicao relatorio = new frmRelatorioInstituicao();
+            relatorio.CarregarDados(instituicao);
+            relatorio.ShowDialog();
+        }
+
+        private DataTable BuscarInstituicao()
+        {
+            string query = "SELECT idInstituicao, nomeInstituicao, emailInstituicao, enderecoInstituicao FROM instituicao";
+            DataTable tabela = new DataTable();
+
+            using (SqlConnection conn = new SqlConnection(conexao.IniciarCon))
+            using (SqlCommand cmd = new SqlCommand(query, conn))
+            using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+            {
+                conn.Open();
+                da.Fill(tabela);
+            }
+            return tabela;
+        }
     }
 }

@@ -137,6 +137,24 @@
     <Compile Include="frmRelatorioAcoes.Designer.cs">
       <DependentUpon>frmRelatorioAcoes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRelatorioInstituicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioInstituicao.Designer.cs">
+      <DependentUpon>frmRelatorioInstituicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioResponsavel.Designer.cs">
+      <DependentUpon>frmRelatorioResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatorioVoluntarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatorioVoluntarios.Designer.cs">
+      <DependentUpon>frmRelatorioVoluntarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmResponsavel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +211,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRelatorioAcoes.resx">
       <DependentUpon>frmRelatorioAcoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioInstituicao.resx">
+      <DependentUpon>frmRelatorioInstituicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioResponsavel.resx">
+      <DependentUpon>frmRelatorioResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatorioVoluntarios.resx">
+      <DependentUpon>frmRelatorioVoluntarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmResponsavel.resx">
       <DependentUpon>frmResponsavel.cs</DependentUpon>

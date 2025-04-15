@@ -47,9 +47,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtcidadelInstituicao = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,7 +212,7 @@
             // btnSalvar
             // 
             this.btnSalvar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnSalvar.Location = new System.Drawing.Point(518, 389);
+            this.btnSalvar.Location = new System.Drawing.Point(461, 479);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 21;
@@ -222,22 +223,13 @@
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.btnBuscar.Location = new System.Drawing.Point(617, 389);
+            this.btnBuscar.Location = new System.Drawing.Point(595, 479);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 25;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::sistemaVoluntariado.Properties.Resources.Captura_de_tela_2025_03_26_092921;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 89);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
             // 
             // txtcidadelInstituicao
             // 
@@ -257,12 +249,33 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Cidade";
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnRelatorio.Location = new System.Drawing.Point(719, 479);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(104, 23);
+            this.btnRelatorio.TabIndex = 49;
+            this.btnRelatorio.Text = "Gerar Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sistemaVoluntariado.Properties.Resources.Captura_de_tela_2025_03_26_092921;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 89);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmInstituiçãovoluntariados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(893, 545);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtcidadelInstituicao);
             this.Controls.Add(this.btnBuscar);
@@ -318,5 +331,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtcidadelInstituicao;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }

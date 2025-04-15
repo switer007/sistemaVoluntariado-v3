@@ -1,6 +1,6 @@
 ﻿namespace sistemaVoluntariado
 {
-    partial class frmRelatorioAcoes
+    partial class frmRelatorioInstituicao
     {
         /// <summary>
         /// Required designer variable.
@@ -30,43 +30,43 @@
         {
             this.btnImprimir = new System.Windows.Forms.Button();
             this.panelRelatorio = new System.Windows.Forms.Panel();
-            this.dgvRelatorioAcoes = new System.Windows.Forms.DataGridView();
+            this.dgvRelatorioInstituicao = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panelRelatorio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioAcoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioInstituicao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(710, 491);
+            this.btnImprimir.Location = new System.Drawing.Point(779, 507);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir.TabIndex = 32;
+            this.btnImprimir.TabIndex = 38;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // panelRelatorio
             // 
-            this.panelRelatorio.Controls.Add(this.dgvRelatorioAcoes);
+            this.panelRelatorio.Controls.Add(this.dgvRelatorioInstituicao);
             this.panelRelatorio.Controls.Add(this.label8);
             this.panelRelatorio.Controls.Add(this.pictureBox6);
-            this.panelRelatorio.Location = new System.Drawing.Point(42, 29);
+            this.panelRelatorio.Location = new System.Drawing.Point(111, 45);
             this.panelRelatorio.Name = "panelRelatorio";
             this.panelRelatorio.Size = new System.Drawing.Size(743, 447);
-            this.panelRelatorio.TabIndex = 31;
+            this.panelRelatorio.TabIndex = 37;
             // 
-            // dgvRelatorioAcoes
+            // dgvRelatorioInstituicao
             // 
-            this.dgvRelatorioAcoes.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dgvRelatorioAcoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRelatorioAcoes.GridColor = System.Drawing.SystemColors.WindowFrame;
-            this.dgvRelatorioAcoes.Location = new System.Drawing.Point(46, 160);
-            this.dgvRelatorioAcoes.Name = "dgvRelatorioAcoes";
-            this.dgvRelatorioAcoes.Size = new System.Drawing.Size(653, 251);
-            this.dgvRelatorioAcoes.TabIndex = 0;
+            this.dgvRelatorioInstituicao.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dgvRelatorioInstituicao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRelatorioInstituicao.GridColor = System.Drawing.SystemColors.WindowFrame;
+            this.dgvRelatorioInstituicao.Location = new System.Drawing.Point(46, 160);
+            this.dgvRelatorioInstituicao.Name = "dgvRelatorioInstituicao";
+            this.dgvRelatorioInstituicao.Size = new System.Drawing.Size(653, 251);
+            this.dgvRelatorioInstituicao.TabIndex = 0;
             // 
             // label8
             // 
@@ -75,9 +75,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(152, 43);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(143, 24);
+            this.label8.Size = new System.Drawing.Size(171, 24);
             this.label8.TabIndex = 28;
-            this.label8.Text = "Relatório Ações";
+            this.label8.Text = "Relatório Instituição";
             // 
             // pictureBox6
             // 
@@ -89,19 +89,19 @@
             this.pictureBox6.TabIndex = 18;
             this.pictureBox6.TabStop = false;
             // 
-            // frmRelatorioAcoes
+            // frmRelatorioInstituicao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(74)))), ((int)(((byte)(141)))));
-            this.ClientSize = new System.Drawing.Size(895, 538);
+            this.ClientSize = new System.Drawing.Size(965, 575);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.panelRelatorio);
-            this.Name = "frmRelatorioAcoes";
-            this.Text = "frmRelatorioAcoes";
+            this.Name = "frmRelatorioInstituicao";
+            this.Text = "frmRelatorioInstituicao";
             this.panelRelatorio.ResumeLayout(false);
             this.panelRelatorio.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioAcoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorioInstituicao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
@@ -111,7 +111,7 @@
 
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Panel panelRelatorio;
-        private System.Windows.Forms.DataGridView dgvRelatorioAcoes;
+        private System.Windows.Forms.DataGridView dgvRelatorioInstituicao;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox6;
     }

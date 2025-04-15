@@ -43,9 +43,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtobservacaoResponsavel = new System.Windows.Forms.TextBox();
             this.Profissional = new System.Windows.Forms.Label();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,16 +192,6 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::sistemaVoluntariado.Properties.Resources.responsavel;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
             // txtobservacaoResponsavel
             // 
             this.txtobservacaoResponsavel.Location = new System.Drawing.Point(136, 300);
@@ -221,12 +212,34 @@
             this.Profissional.TabIndex = 39;
             this.Profissional.Text = "Profissional Responsável";
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnRelatorio.Location = new System.Drawing.Point(540, 400);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(104, 23);
+            this.btnRelatorio.TabIndex = 49;
+            this.btnRelatorio.Text = "Gerar Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::sistemaVoluntariado.Properties.Resources.responsavel;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 83);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmResponsavel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(859, 514);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.Profissional);
             this.Controls.Add(this.txtobservacaoResponsavel);
             this.Controls.Add(this.btnBuscar);
@@ -273,5 +286,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtobservacaoResponsavel;
         private System.Windows.Forms.Label Profissional;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }

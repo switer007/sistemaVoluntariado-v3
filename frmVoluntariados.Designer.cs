@@ -46,6 +46,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtobsVoluntario = new System.Windows.Forms.TextBox();
             this.txt = new System.Windows.Forms.Label();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -240,12 +241,24 @@
             this.txt.TabIndex = 27;
             this.txt.Text = "Observação";
             // 
+            // btnRelatorio
+            // 
+            this.btnRelatorio.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnRelatorio.Location = new System.Drawing.Point(566, 500);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(104, 23);
+            this.btnRelatorio.TabIndex = 49;
+            this.btnRelatorio.Text = "Gerar Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            // 
             // frmVoluntariados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(66)))), ((int)(((byte)(133)))));
             this.ClientSize = new System.Drawing.Size(902, 606);
+            this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.txtobsVoluntario);
             this.Controls.Add(this.btnBuscar);
@@ -294,5 +307,6 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtobsVoluntario;
         private System.Windows.Forms.Label txt;
+        private System.Windows.Forms.Button btnRelatorio;
     }
 }
