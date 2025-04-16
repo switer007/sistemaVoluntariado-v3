@@ -61,7 +61,7 @@
             this.label1.Size = new System.Drawing.Size(27, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -106,7 +106,7 @@
             this.label5.Size = new System.Drawing.Size(94, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "Endereço";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+        //    this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -129,7 +129,7 @@
             this.label7.Size = new System.Drawing.Size(65, 24);
             this.label7.TabIndex = 6;
             this.label7.Text = "Senha";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+        //    this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtidUsuario
             // 

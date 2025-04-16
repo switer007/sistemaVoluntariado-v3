@@ -83,7 +83,7 @@ namespace sistemaVoluntariado
                 using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
                 {
                     cn.Open();
-                    var SqlQuery = "select * from instituicao where nomeInsituicao like '%" + txtBuscaInstituicao.Text + "%'";
+                    var SqlQuery = "select * from instituicao where nomeInstituicao like '%" + txtBuscaInstituicao.Text + "%'";
                     using (SqlDataAdapter da = new SqlDataAdapter(SqlQuery, cn))
                     {
                         using (DataTable dt = new DataTable())
@@ -107,7 +107,7 @@ namespace sistemaVoluntariado
                 //pega o ID do usuario selecionado
                 int idInstituicao = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idInstituicao"].Value);
                 //abre o formulario de cadastro com os dados do Usuario
-                frmBuscaInstituicao frm = new frmBuscaInstituicao();
+                frmInstituiçãovoluntariados frm = new frmInstituiçãovoluntariados();
                 frm.ShowDialog();
 
                 //atualiza a lista após edição
@@ -115,7 +115,7 @@ namespace sistemaVoluntariado
             }
             else
             {
-                MessageBox.Show("Selecione um Instiruição para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Selecione um Instituição para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

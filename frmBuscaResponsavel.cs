@@ -64,7 +64,7 @@ namespace sistemaVoluntariado
                                 cmd.Parameters.AddWithValue("@id", idResponsavel);
                                 cmd.ExecuteNonQuery();
                                 MessageBox.Show("Responsavel excluído com sucesso!");
-                                BuscarNovamente(); //recarrega a tabela após exclusão
+                                BuscarNovamenteReponsavel(); //recarrega a tabela após exclusão
                             }
                         }
                     }
@@ -75,8 +75,7 @@ namespace sistemaVoluntariado
                 }
             }
         }
-
-        private void BuscarNovamente()
+        private void BuscarNovamenteReponsavel()
         {
             try
             {
@@ -99,5 +98,25 @@ namespace sistemaVoluntariado
                 MessageBox.Show("Erro ao carregar dados. \n\n" + ex.Message);
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                //pega o ID do usuario selecionado
+                int idReponsavel = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idReponsavel"].Value);
+                //abre o formulario de cadastro com os dados do Usuario
+                frmResponsavel frm = new frmResponsavel(idReponsavel);
+                frm.ShowDialog();
+
+                //atualiza a lista após edição
+                BuscarNovamenteReponsavel();
+            }
+            else
+            {
+                MessageBox.Show("Selecione um responsavel para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
+

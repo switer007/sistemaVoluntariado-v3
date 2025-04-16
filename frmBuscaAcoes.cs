@@ -107,7 +107,7 @@ namespace sistemaVoluntariado
                 //pega o ID do usuario selecionado
                 int idAcoes = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idAcoes"].Value);
                 //abre o formulario de cadastro com os dados do Usuario
-                frmBuscaAcoes frm = new frmBuscaAcoes ();
+                frmAções frm = new frmAções ();
                 frm.ShowDialog();
 
                 //atualiza a lista após edição

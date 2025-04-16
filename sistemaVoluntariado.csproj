@@ -161,11 +161,11 @@
     <Compile Include="frmResponsavel.Designer.cs">
       <DependentUpon>frmResponsavel.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmVoluntariados.cs">
+    <Compile Include="frmVoluntariados1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVoluntariados.Designer.cs">
-      <DependentUpon>frmVoluntariados.cs</DependentUpon>
+    <Compile Include="frmVoluntariados1.Designer.cs">
+      <DependentUpon>frmVoluntariados1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,8 +224,8 @@
     <EmbeddedResource Include="frmResponsavel.resx">
       <DependentUpon>frmResponsavel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmVoluntariados.resx">
-      <DependentUpon>frmVoluntariados.cs</DependentUpon>
+    <EmbeddedResource Include="frmVoluntariados1.resx">
+      <DependentUpon>frmVoluntariados1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

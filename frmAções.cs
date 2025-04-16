@@ -113,7 +113,7 @@ namespace sistemaVoluntariado
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-            frmBuscaUsuario frm = new frmBuscaUsuario();
+            frmBuscaAcoes frm = new frmBuscaAcoes();
             frm.ShowDialog();
         }
     }

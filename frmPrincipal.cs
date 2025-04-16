@@ -34,7 +34,7 @@ namespace sistemaVoluntariado
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
-            frmCadastroUsuario frm = new frmCadastroUsuario();
+            frmCadastroUsuario frm = new frmCadastroUsuario(0);
             frm.ShowDialog();
         }
 
@@ -46,7 +46,7 @@ namespace sistemaVoluntariado
 
         private void btnVoluntario_Click(object sender, EventArgs e)
         {
-            frmVoluntariados frm = new frmVoluntariados();
+            frmVoluntariados1 frm = new frmVoluntariados1 (0);
             frm.ShowDialog();
         }
 
@@ -58,7 +58,7 @@ namespace sistemaVoluntariado
 
         private void btnResponsavel_Click(object sender, EventArgs e)
         {
-            frmResponsavel frm = new frmResponsavel();
+            frmResponsavel frm = new frmResponsavel (0);
             frm.ShowDialog();
         }
 

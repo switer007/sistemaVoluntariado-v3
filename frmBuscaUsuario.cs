@@ -65,7 +65,7 @@ namespace sistemaVoluntariado
                                 cmd.Parameters.AddWithValue("@id", idusuario);
                                 cmd.ExecuteNonQuery();
                                 MessageBox.Show("Usuario excluído com sucesso!");
-                                BuscarNovamente(); //recarrega a tabela após exclusão
+                                BuscarNovamenteUsuario(); //recarrega a tabela após exclusão
                             }
                         }
                     }
@@ -77,7 +77,7 @@ namespace sistemaVoluntariado
             }
         }
 
-        private void BuscarNovamente()
+        private void BuscarNovamenteUsuario()
         {
             try
             {
@@ -108,15 +108,15 @@ namespace sistemaVoluntariado
                 //pega o ID do usuario selecionado
                 int idusuario = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["idusuario"].Value);
                 //abre o formulario de cadastro com os dados do Usuario
-                frmCadastroUsuario frm = new frmCadastroUsuario();
+                frmCadastroUsuario frm = new frmCadastroUsuario(idusuario);
                 frm.ShowDialog();
 
                 //atualiza a lista após edição
-                BuscarNovamente();
+                BuscarNovamenteUsuario();
             }
             else
             {
-                MessageBox.Show("Selecione um aluno para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Selecione um usuario para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.idResponsavel = new System.Windows.Forms.Label();
+       //     this.idResponsavel = new System.Windows.Forms.Label();
             this.nomeResponsavel = new System.Windows.Forms.Label();
             this.telefoneResponsavel = new System.Windows.Forms.Label();
             this.emailResponsavel = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@
             // 
             // idResponsavel
             // 
-            this.idResponsavel.AutoSize = true;
+        /*    this.idResponsavel.AutoSize = true;
             this.idResponsavel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idResponsavel.ForeColor = System.Drawing.SystemColors.Control;
             this.idResponsavel.Location = new System.Drawing.Point(50, 164);
@@ -60,7 +60,7 @@
             this.idResponsavel.Size = new System.Drawing.Size(27, 24);
             this.idResponsavel.TabIndex = 0;
             this.idResponsavel.Text = "ID";
-            this.idResponsavel.Click += new System.EventHandler(this.label1_Click);
+            this.idResponsavel.Click += new System.EventHandler(this.label1_Click);*/
             // 
             // nomeResponsavel
             // 
@@ -257,7 +257,7 @@
             this.Controls.Add(this.emailResponsavel);
             this.Controls.Add(this.telefoneResponsavel);
             this.Controls.Add(this.nomeResponsavel);
-            this.Controls.Add(this.idResponsavel);
+//            this.Controls.Add(this.idResponsavel);
             this.Name = "frmResponsavel";
             this.Text = "frmResponsavel";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -268,7 +268,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label idResponsavel;
+  //      private System.Windows.Forms.Label idResponsavel;
         private System.Windows.Forms.Label nomeResponsavel;
         private System.Windows.Forms.Label telefoneResponsavel;
         private System.Windows.Forms.Label emailResponsavel;

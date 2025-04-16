@@ -12,10 +12,60 @@ using System.Windows.Forms;
 namespace sistemaVoluntariado
 {
     public partial class frmInstituiçãovoluntariados: Form
+         public partial class frmBuscaInstituicao : Form
     {
+        int idInstituicao = 0;
+
+        public frmBuscaInstituicao(int idInstituicao)
+        { 
+    
         public frmInstituiçãovoluntariados()
         {
             InitializeComponent();
+            this.idInstituicao = idInstituicao;
+
+            if (this.idInstituicao > 0)
+                Getinstituicao(idInstituicao);
+        }
+        private void Getinstituicao(int idInstituicao)
+        {
+            try
+            {
+                using (SqlConnection cn = new SqlConnection(conexao.IniciarCon))
+                {
+                    cn.Open();
+                    var sql = "select * from instituicao where idInstituicao=" + idInstituicao;
+                    using (SqlCommand cmd = new SqlCommand(sql, cn))
+                    {
+                        using (SqlDataReader dr = cmd.ExecuteReader())
+                        {
+                            if (dr.HasRows)
+                            {
+                                if (dr.Read())
+                                {
+                                    txtnomeInstituicao.Text = dr["nomeInstituicao"].ToString();
+                                    txtsetorInstituicao.Text = dr["setorInstituicao"].ToString();
+                                    txtcidadelInstituicao.Text = dr["cidadeInstituicao"].ToString();
+                                    txtenderecoInstituicao.Text = dr["enderecoInstituicao"].ToString();
+                                    txtemailInstituicao.Text = dr["emailInstituicao"].ToString();
+                                    txtcontatoInstituicao.Text = dr["contatoInstituicap"].ToString();
+                                    txttelefoneInstituicao.Text = dr["telefoneInstituicao"].ToString();
+                                    txtCNPJInstituicao.Text = dr["CNPJInstituicao"].ToString();
+
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dados não atualizado.\n\n" + ex.Message);
+            }
+        }
+    
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
